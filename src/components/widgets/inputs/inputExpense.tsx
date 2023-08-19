@@ -102,6 +102,7 @@ export const InputDate = <T extends Expense | ExpenseFilters>({
 
   const onKeyPress = (e: NativeSyntheticEvent<TextInputKeyPressEventData>) => {
     if (e.nativeEvent.key === 'Backspace') {
+      console.log('Backspace');
       setExpense(exp => ({...exp, [updateKey]: ''}));
     }
   };
